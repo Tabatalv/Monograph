@@ -1,0 +1,718 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(Img/fondo.jpg);
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+header div{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 180px ;
+    border-bottom: solid 1px black;
+}
+header div img{
+    height: 3vh;
+    margin-top: 45px;
+}
+
+header h3, header span, #hero h1:first-child, #hero span:first-child, #hero span:last-child, .creative h3, .creative h3 span, .creative p, .monograph-text h3, .monograph-text span, .editing h3, .editing p, .editing span, .opinion h3, .opinion span, .opinion h4, .opinion p, .copywriting h3, .copywriting p, .copywriting span, .brand h3, .brandspan, .brand p, .opinion-2 span, .opinion-2 h4, .opinion-2 p, .rain-text div:first-child h2, .rain-text div:first-child span, .rain-text div:nth-child(3) h3, .rain-text div:nth-child(3) span, .rain-text div:nth-child(5) h3, .rain-text div:nth-child(5) span,  .rain-text div:nth-child(7) h2,  .rain-text div:nth-child(7) span,  .rain-text div:nth-child(9) h3,  .rain-text div:nth-child(9) span, .kim-info h4, .kim-info p, .kim-info span, .card > p, .collaboration p, .texto-img p, .contact-info h3{
+    font-family: Roboto, sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: black;
+}
+
+header span, #hero span:first-child, #hero span:last-child, .creative h3 span, .monograph-text span, .editing span, .opinion span, .copywriting span, .brand span, .opinion-2 span, .rain-text div:first-child span, .rain-text div:nth-child(3) span, .rain-text div:nth-child(5) span,  .rain-text div:nth-child(7) span,  .rain-text div:nth-child(9) span, .kim-info h4 span, .kim-info p span, .card h3, .collaboration h3, .contact-info span{
+    font-family: serif;
+   
+}
+
+header a, .boton-1, .boton-2, .boton-3, .boton-4, footer > div > div:last-child .menu, .opinion-2 a, .div-img a, .rain-text a, .kim-info a, .card a, .collaboration a{
+    text-decoration: none;
+}
+
+#hero div{
+    padding: 60px;
+}
+#hero h1:first-child, #hero h1:last-child, #hero span:first-child, #hero span:last-child, .rain-text div:first-child h2, .rain-text div:first-child span,  .rain-text div:nth-child(7) h2,  .rain-text div:nth-child(7) span, .contact-info h3, .contact-info span{
+    font-size: 96px;
+}
+
+#hero h1:first-child{
+    margin-bottom: 0;
+    margin-left: 170px;
+    line-height: 0;
+    
+}
+ #hero h1:last-child{
+    text-align: right;
+    margin-right: 170px;
+    margin-bottom: 0;
+    line-height: 50px;
+    
+}
+
+#qualities{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grid{
+    display: grid;
+    width: 80vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+.creative{
+    grid-column: 1 / 2;
+}
+
+.monograph-text{
+    grid-row: 1 / 2;
+    grid-column: 2 / 4;
+}
+
+.editing{
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+}
+
+.monograph-image{
+    grid-row: 3 / 4;
+    grid-column: 2 / 4;
+}
+
+.opinion{
+    grid-row: 4 / 5;
+    grid-column: 2 / 4;
+}
+
+.copywriting{
+    grid-row: 5 / 6;
+    grid-column: 2 / 4;
+}
+
+.monograph-circles{
+    grid-row: 6 / 7;
+    grid-column: 2 / 4;
+}
+
+.brand{
+    grid-row: 7 / 8;
+    grid-column: 2 / 4;
+}
+
+.opinion-2{
+    grid-row: 8 / 9;
+    grid-column: 2 / 4
+}
+
+.creative{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    
+}
+
+.creative > div{
+    display: flex;
+
+}
+
+.creative p, .boton-1 p, .boton-2 p, .boton-3 p, .boton-4 p, footer li, .logo-rayo p{
+    font-size: 14px;
+    font-family: Roboto sans-serif;
+}
+label, ::placeholder{
+    font-size: 14px;
+    font-family: sans-serif;
+
+    
+    
+}
+
+.creative > div p:last-of-type{
+    box-sizing: border-box;
+    border: solid 1px black;
+    padding: 10px 180px 10px 10px;
+}
+
+.creative > div img{
+    margin-top: 14px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    border: solid 1px black;
+    
+}
+
+.creative > div img{
+    border-left: none;
+}
+.monograph-text img, .editing img, .copywriting img, .brand img, .rain-text img, form div img{
+    transition: transform 0.2s linear;
+}
+.monograph-text{
+    border-left: solid 1px black;
+    align-items: center;
+
+}
+.monograph-text h3, .monograph-text span{
+    font-size: 46px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+.boton-1 p, .boton-2 p, .boton-3 p, .boton-4 p, .rain-text p, .enviar{
+    box-sizing: border-box;
+    border: solid 1px black;
+    width: fit-content;
+    padding: 16px 88px 16px 32px;
+    color: black;
+    text-transform: capitalize;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 0;
+    border-bottom: none;
+
+}
+.editing .boton-arriba, .copywriting .boton-arriba-2, .brand .boton-arriba-3 {
+    font-size: 16px;
+    padding: 32px 4px 0;
+    width: fit-content;
+    box-sizing: border-box;
+    border: solid 1px black;
+    border-top: none;
+    margin-top: 0;
+    margin-left: 30px;
+    margin-bottom: 150px;
+}
+
+.copywriting .boton-arriba-2, .editing .boton-arriba{
+    margin-bottom: 169px;
+}
+
+.monograph-text > div{
+    margin-top: 160px;
+    margin-left: 30px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+
+.monograph-text > div > div img{
+    margin-left: 784px;
+}
+.monograph-text p{
+    margin-top: 106px;
+    margin-bottom: -40px;
+}
+.editing > div:last-child img{
+    margin-left: 815px;
+}
+.editing > div:last-child p{
+    margin-bottom: -37px;
+}
+
+.copywriting > div:last-child img{
+    margin-left: 814px;
+}
+
+.copywriting > div:last-child p{
+    margin-bottom: -37px;
+}
+
+.brand > div:last-child img{
+    margin-left: 816px;
+}
+
+.brand > div:last-child p{
+    margin-bottom: -40px;
+    margin-top: 38px;
+}
+
+
+.editing, .copywriting{
+    border: solid 1px black;
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 0;
+    
+}
+
+ .editing div:nth-child(2), .copywriting div:nth-child(2), .brand div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.editing div:nth-child(2) h3{
+   margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.editing div:nth-child(2), .copywriting div:nth-child(2), .brand div:nth-child(2) {
+    margin-left: 40px;
+}
+
+.editing div:nth-child(2) p, .brand div:nth-child(2) p, .copywriting div:nth-child(2) p{
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+.editing div:first-child{
+    margin-bottom: 24px;
+}
+.monograph-image, .monograph-circles, .brand{
+    border: solid 1px black;
+    border-right: none;
+}
+.monograph-image img, .monograph-circles img{
+   width: 56vw;
+   margin-bottom: -5px;
+}
+
+
+.opinion, .opinion-2{
+    text-align: center;
+    border: solid 1px black;
+    border-right: none;
+}
+.opinion-2 > div, .opinion > div{
+    margin-top: 80px;
+}
+.opinion-2, .monograph-circles, .monograph-image{
+    border-top: none ;
+    border-bottom: none;
+}
+
+.opinion h3, .opinion span, .opinion-2 h3, .opinion-2 span{
+    font-size: 28px;
+}
+
+.opinion h4, .opinion p, .opinion-2 h4, .opinion-2 p, .card > p, .collaboration p{
+    font-size: 18px;
+    margin: 0;
+}
+
+.kim-info h4, .kim-info p, .kim-info span, .texto-img p, .contact-info p{
+    font-size: 18px;
+}
+
+.opinion p, .opinion-2 p{
+    font-weight: 300;
+    
+}
+.opinion h4, .opinion-2 h4{
+    font-weight: 400;
+}
+
+.opinion h3{
+    margin-top: 50px;
+}
+.opinion h4{
+    margin-top: 60px;
+}
+.opinion-2 {
+    border-bottom: none
+
+}
+
+.opinion-2 p{
+    border-bottom: solid 1px black;
+    width: fit-content;
+    margin-left: 365px;
+    transition: transform 0.1s linear ;
+}
+
+.copywriting{
+    border-top: none;
+}
+
+footer{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+footer div:nth-child(2){
+    display: flex;
+}
+
+footer ul{
+    display: flex;
+
+}
+
+footer .mono-image{
+    width: 80%;
+    border-bottom: solid 1px black;
+    margin-left: 160px;
+    margin-top: 125px;
+    padding-bottom: 70px;
+}
+
+footer > div > div > div img{
+    width: 20px;
+    
+}
+
+footer li{
+    margin: 0 10px;
+    list-style: none;
+    color: black;
+    font-weight: 400;
+    border-bottom: solid 1px black;
+    transition: transform 0.1s linear ;
+    
+}
+
+footer nav{
+    margin-left: auto;
+    margin-right: 162px;
+}
+
+
+footer .div-img p{
+    border: solid 1px black;
+    border-radius: 4px;
+    color: black;
+    padding: 4px 4px 2px 21px ;
+    transition: background-color 0.2s ;
+    width: fit-content;
+
+}
+
+footer .copyright{
+    margin-left: 156px;
+}
+
+.logo-rayo p{
+    font-size: 12px;
+}
+
+footer > div > div:last-child li:hover, .opinion-2 p:hover, .kim-info p:last-child:hover, .collaboration .text-link:hover{
+    border-bottom: none;
+    transform: translate(0, -6px);
+}
+
+footer .div-img p:hover{
+    background-color: gray;
+    width: fit-content;
+}
+
+.div-img a{
+    display: flex;
+}
+.div-img{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.div-img img{
+    margin-right: -21px;
+    z-index: 1;
+    width: 8%;
+    height: 5%;
+    margin-top: 14px;
+}
+
+.monograph-text img:hover, .editing img:hover, .copywriting img:hover, .brand img:hover, .rain-text img:hover, form div img:hover{
+    transform: translate(10px, 0);
+}
+
+.about-fondo{
+    background-image: url(Img/about-fondo.jpg);
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.rain-text{
+    text-align: center;
+}
+
+.vertical-line{
+    height: 500px;
+    width: 1px;
+    background-color: black;
+    margin: auto;
+}
+
+.rain-text div:nth-child(3) h3, .rain-text div:nth-child(3) span, .rain-text div:nth-child(5) h3, .rain-text div:nth-child(5) span,  .rain-text div:nth-child(9) h3,  .rain-text div:nth-child(9) span{
+    font-size: 48px;
+}
+
+.rain-text > div > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rain-text div:nth-child(9) h3{
+    margin: 0;
+}
+
+.rain-text img{
+    margin-bottom: 23px;
+    margin-top: -39px;
+    margin-left: 34px;
+}
+
+.rain-text p{
+    margin-right: 35px;
+    margin-top: 80px;
+    border-bottom: solid 1px black;
+}
+
+.linea{
+    height: 1px;
+    width: 75%;
+    background-color: black;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.kim-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kim-info p:last-child{
+    transition: transform 0.1s linear;
+    border-bottom: solid 1px black;
+    width: fit-content;
+}
+
+.kim-info div:first-child{
+    margin-top: 100px;
+}
+
+.kim-info p, .kim-info span, .kim-info h4{
+    font-weight: 400;
+}
+
+.kim-info span{
+    font-weight: 600;
+}
+
+.services-fondo{
+    background-image: url(Img/services-fondo.jpg);
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.grid-2{
+    display: grid;
+    width: 80vw;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
+
+}
+
+.editing-services{
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+}
+
+.copywriting-services{
+    grid-row: 1 / 2;
+    grid-column: 3 / 5;
+}
+
+.brand-services{
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+}
+
+.collaboration{
+    grid-row: 2 / 3;
+    grid-column: 3 / 5 ;
+}
+
+.mono-grid-img{
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+}
+
+.texto-img{
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-img img{
+    width: 26px;
+    margin-bottom: -5px;
+}
+
+
+.texto-img p{
+    margin-left: 31px;
+    font-weight: 300;
+}
+
+.card, .collaboration, .mono-grid-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-bottom: solid 1px black;
+    border-right: solid 1px black;
+}
+
+.mono-grid-img img{
+    filter: invert();
+}
+.mono-grid-img{
+    border-bottom: none;
+    margin-bottom: 102px;
+}
+
+.card h3, .collaboration h3{
+    font-weight: 400;
+    font-size: 48px;
+    margin: 0;
+    margin-left: 23px;
+    margin-bottom: 21px;
+}
+.card p{
+    margin-top: -28px;
+    padding: 26px;
+}
+.card > p, .collaboration p{
+    font-weight: 400;
+}
+
+.kim-services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copywriting-services, .collaboration{
+    border-right: none;
+}
+
+.collaboration p{
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.collaboration h3{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.collaboration .text-link{
+    border-bottom: solid 1px black;
+    color: black;
+    transition: transform 0.1s linear;
+}
+
+.texto-img p{
+    padding: 3px;
+}
+
+.texto-img a{
+    margin-left: 24px;
+}
+
+.fondo-contact{
+    background-image: url(Img/fondo-contact.jpg);
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+
+#contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact-info h3{
+    margin-bottom: 0;
+}
+
+.contact-info div{
+    margin: 0 .5rem ;
+}
+
+.transparente{
+    background-color: rgb(0, 0, 0, 0);
+    border: solid 1px black;
+    margin-bottom: 1rem;
+    padding: .3rem 1rem;
+    height: 2rem;
+    width: 100%;
+    outline: none;
+}
+
+::placeholder{
+    color: rgb(51, 48, 48);
+    
+}
+
+
+label{
+    font-weight: 500;
+}
+
+.enviar{
+    background-color: rgb(0, 0, 0, 0);
+    border-bottom: solid 1px black;
+    margin-top: 0;
+    padding-right: 6.5rem
+}
+
+form div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+form{
+    margin: 8rem;
+}
+.transparente:focus{
+    border: solid 1px rgb(65, 152, 233);
+    
+}
+
+form div img{
+    margin-left: -6rem;
+}
+
+.contact-info > div:first-child{
+    margin-bottom: auto;
+}
+
+label{
+    display: block;
+    margin-bottom: -.6rem;
+}
