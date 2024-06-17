@@ -23,14 +23,41 @@ header div img{
     margin-top: 45px;
 }
 
-header h3, header span, #hero h1:first-child, #hero span:first-child, #hero span:last-child, .creative h3, .creative h3 span, .creative p, .monograph-text h3, .monograph-text span, .editing h3, .editing p, .editing span, .opinion h3, .opinion span, .opinion h4, .opinion p, .copywriting h3, .copywriting p, .copywriting span, .brand h3, .brandspan, .brand p, .opinion-2 span, .opinion-2 h4, .opinion-2 p, .rain-text div:first-child h2, .rain-text div:first-child span, .rain-text div:nth-child(3) h3, .rain-text div:nth-child(3) span, .rain-text div:nth-child(5) h3, .rain-text div:nth-child(5) span,  .rain-text div:nth-child(7) h2,  .rain-text div:nth-child(7) span,  .rain-text div:nth-child(9) h3,  .rain-text div:nth-child(9) span, .kim-info h4, .kim-info p, .kim-info span, .card > p, .collaboration p, .texto-img p, .contact-info h3{
+header h3, header span, #hero h1:first-child, #hero span:first-child, #hero span:last-child, .memorable p, .info p, .info h5, .more-info h3, .info-text p, .info-text h4, .more-info h4{
     font-family: Roboto, sans-serif;
-    font-size: 36px;
+    font-size: 2.5rem;
     font-weight: 500;
     color: black;
 }
 
-header span, #hero span:first-child, #hero span:last-child, .creative h3 span, .monograph-text span, .editing span, .opinion span, .copywriting span, .brand span, .opinion-2 span, .rain-text div:first-child span, .rain-text div:nth-child(3) span, .rain-text div:nth-child(5) span,  .rain-text div:nth-child(7) span,  .rain-text div:nth-child(9) span, .kim-info h4 span, .kim-info p span, .card h3, .collaboration h3, .contact-info span{
+.info h5, .info-text h4, .info-text h5{
+    font-size: .9rem;
+    
+}
+
+.more-info h4{
+    font-size: 2rem;
+}
+
+.info-text p{
+    font-size: 1.7rem;
+}
+
+.info p, .more-info{
+    padding-left: 2rem;
+}
+
+.info-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.arrow-animation{
+    margin-left: .5rem
+}
+
+header span, #hero span:first-child, #hero span:last-child, .memorable span, .info span, .more-info span, .info-text span{
     font-family: serif;
    
 }
@@ -40,10 +67,10 @@ header a, .boton-1, .boton-2, .boton-3, .boton-4, footer > div > div:last-child 
 }
 
 #hero div{
-    padding: 60px;
+    padding: 3.7rem;
 }
 #hero h1:first-child, #hero h1:last-child, #hero span:first-child, #hero span:last-child, .rain-text div:first-child h2, .rain-text div:first-child span,  .rain-text div:nth-child(7) h2,  .rain-text div:nth-child(7) span, .contact-info h3, .contact-info span{
-    font-size: 96px;
+    font-size: 6rem;
 }
 
 #hero h1:first-child{
@@ -56,16 +83,55 @@ header a, .boton-1, .boton-2, .boton-3, .boton-4, footer > div > div:last-child 
     text-align: right;
     margin-right: 170px;
     margin-bottom: 0;
-    line-height: 50px;
+    line-height: 11rem;
     
 }
 
-#qualities{
+.grid{
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+.info, .more-info{
+    border-left: solid 1px black;
+    border-bottom: solid 1px black;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+}
+
+.upper-box{
+    border: solid 1px black;
+    border-top: none;
+    width: fit-content;
+    padding: 3rem .5rem 0;
+    position: relative;
+    bottom: 15.4rem;
+}
+
+.memorable{
+    width: 108rem;
+}
+.info > div{
+    position: relative;
+    left: 33rem;
+    width: 15rem;
+    border: solid 1px black;
+    border-bottom: none;
+    padding: 1rem 3rem;
+}
+.more-img img{
+    width: 100%;
+    height: 100%;
+}
+/* #qualities{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.grid{
+} */
+/* .grid{
     display: grid;
     width: 80vw;
     grid-template-columns: 1fr 1fr 1fr;
@@ -116,7 +182,7 @@ header a, .boton-1, .boton-2, .boton-3, .boton-4, footer > div > div:last-child 
 .opinion-2{
     grid-row: 8 / 9;
     grid-column: 2 / 4
-}
+} */
 
 .creative{
     display: flex;
