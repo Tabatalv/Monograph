@@ -23,16 +23,20 @@ header div img{
     margin-top: 45px;
 }
 
-header h3, header span, #hero h1:first-child, #hero span:first-child, #hero span:last-child, .memorable p, .info p, .info h5, .more-info h3, .info-text p, .info-text h4, .more-info h4{
+header h3, header span, #hero h1:first-child, #hero span:first-child, #hero span:last-child, .memorable p, .memorable h5, .info p, .info h5, .more-info h3, .info-text p, .info-text h4, .more-info h4, .info-text h5{
     font-family: Roboto, sans-serif;
     font-size: 2.5rem;
     font-weight: 500;
     color: black;
 }
 
-.info h5, .info-text h4, .info-text h5{
-    font-size: .9rem;
+.info h5, .info-text h4, .info-text h5, .memorable h5{
+    font-size: 1rem;
     
+}
+
+.info-text h5{
+    font-weight: 300;
 }
 
 .more-info h4{
@@ -43,7 +47,7 @@ header h3, header span, #hero h1:first-child, #hero span:first-child, #hero span
     font-size: 1.7rem;
 }
 
-.info p, .more-info{
+.info p, .more-info h4, .more-info h3{
     padding-left: 2rem;
 }
 
@@ -54,9 +58,13 @@ header h3, header span, #hero h1:first-child, #hero span:first-child, #hero span
     justify-content: center;
 }
 .arrow-animation{
-    margin-left: .5rem
+    margin-left: .5rem;
+    transition: transform .3s;
 }
 
+.arrow-animation:hover{
+    transform: translate(1rem, 0);
+}
 header span, #hero span:first-child, #hero span:last-child, .memorable span, .info span, .more-info span, .info-text span{
     font-family: serif;
    
@@ -98,7 +106,6 @@ header a, .boton-1, .boton-2, .boton-3, .boton-4, footer > div > div:last-child 
     height: 24rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: end;
 }
 
@@ -108,15 +115,28 @@ header a, .boton-1, .boton-2, .boton-3, .boton-4, footer > div > div:last-child 
     width: fit-content;
     padding: 3rem .5rem 0;
     position: relative;
-    bottom: 15.4rem;
+    bottom: 15.2rem;
+    left: 2rem;
 }
 
 .memorable{
-    width: 108rem;
+    width: 300rem;
+}
+
+.memorable a{
+    border: solid 1px black;
+    border-left: none;
+    padding: .2rem .5rem;
+}
+.mailing{
+    background: transparent;
+    border: solid 1px black;
+    outline: none;
+    padding: .44rem .5rem;
 }
 .info > div{
     position: relative;
-    left: 33rem;
+    left: 39.4rem;
     width: 15rem;
     border: solid 1px black;
     border-bottom: none;
@@ -126,81 +146,9 @@ header a, .boton-1, .boton-2, .boton-3, .boton-4, footer > div > div:last-child 
     width: 100%;
     height: 100%;
 }
-/* #qualities{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-/* .grid{
-    display: grid;
-    width: 80vw;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    border-top: solid 1px black;
-    border-bottom: solid 1px black;
-}
 
-.creative{
-    grid-column: 1 / 2;
-}
 
-.monograph-text{
-    grid-row: 1 / 2;
-    grid-column: 2 / 4;
-}
 
-.editing{
-    grid-row: 2 / 3;
-    grid-column: 2 / 4;
-}
-
-.monograph-image{
-    grid-row: 3 / 4;
-    grid-column: 2 / 4;
-}
-
-.opinion{
-    grid-row: 4 / 5;
-    grid-column: 2 / 4;
-}
-
-.copywriting{
-    grid-row: 5 / 6;
-    grid-column: 2 / 4;
-}
-
-.monograph-circles{
-    grid-row: 6 / 7;
-    grid-column: 2 / 4;
-}
-
-.brand{
-    grid-row: 7 / 8;
-    grid-column: 2 / 4;
-}
-
-.opinion-2{
-    grid-row: 8 / 9;
-    grid-column: 2 / 4
-} */
-
-.creative{
-    display: flex;
-    flex-direction: column;
-    position: sticky;
-    top: 0;
-    
-}
-
-.creative > div{
-    display: flex;
-
-}
-
-.creative p, .boton-1 p, .boton-2 p, .boton-3 p, .boton-4 p, footer li, .logo-rayo p{
-    font-size: 14px;
-    font-family: Roboto sans-serif;
-}
 label, ::placeholder{
     font-size: 14px;
     font-family: sans-serif;
@@ -209,134 +157,8 @@ label, ::placeholder{
     
 }
 
-.creative > div p:last-of-type{
-    box-sizing: border-box;
-    border: solid 1px black;
-    padding: 10px 180px 10px 10px;
-}
-
-.creative > div img{
-    margin-top: 14px;
-    padding-bottom: 5px;
-    box-sizing: border-box;
-    border: solid 1px black;
-    
-}
-
-.creative > div img{
-    border-left: none;
-}
-.monograph-text img, .editing img, .copywriting img, .brand img, .rain-text img, form div img{
-    transition: transform 0.2s linear;
-}
-.monograph-text{
-    border-left: solid 1px black;
-    align-items: center;
-
-}
-.monograph-text h3, .monograph-text span{
-    font-size: 46px;
-    margin-top: 20px;
-    margin-bottom: 16px;
-}
-
-.boton-1 p, .boton-2 p, .boton-3 p, .boton-4 p, .rain-text p, .enviar{
-    box-sizing: border-box;
-    border: solid 1px black;
-    width: fit-content;
-    padding: 16px 88px 16px 32px;
-    color: black;
-    text-transform: capitalize;
-    margin-left: auto;
-    margin-top: 20px;
-    margin-bottom: 0;
+.end-card{
     border-bottom: none;
-
-}
-.editing .boton-arriba, .copywriting .boton-arriba-2, .brand .boton-arriba-3 {
-    font-size: 16px;
-    padding: 32px 4px 0;
-    width: fit-content;
-    box-sizing: border-box;
-    border: solid 1px black;
-    border-top: none;
-    margin-top: 0;
-    margin-left: 30px;
-    margin-bottom: 150px;
-}
-
-.copywriting .boton-arriba-2, .editing .boton-arriba{
-    margin-bottom: 169px;
-}
-
-.monograph-text > div{
-    margin-top: 160px;
-    margin-left: 30px;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-
-
-.monograph-text > div > div img{
-    margin-left: 784px;
-}
-.monograph-text p{
-    margin-top: 106px;
-    margin-bottom: -40px;
-}
-.editing > div:last-child img{
-    margin-left: 815px;
-}
-.editing > div:last-child p{
-    margin-bottom: -37px;
-}
-
-.copywriting > div:last-child img{
-    margin-left: 814px;
-}
-
-.copywriting > div:last-child p{
-    margin-bottom: -37px;
-}
-
-.brand > div:last-child img{
-    margin-left: 816px;
-}
-
-.brand > div:last-child p{
-    margin-bottom: -40px;
-    margin-top: 38px;
-}
-
-
-.editing, .copywriting{
-    border: solid 1px black;
-    border-right: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 0;
-    
-}
-
- .editing div:nth-child(2), .copywriting div:nth-child(2), .brand div:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-.editing div:nth-child(2) h3{
-   margin-top: 32px;
-    margin-bottom: 16px;
-}
-
-.editing div:nth-child(2), .copywriting div:nth-child(2), .brand div:nth-child(2) {
-    margin-left: 40px;
-}
-
-.editing div:nth-child(2) p, .brand div:nth-child(2) p, .copywriting div:nth-child(2) p{
-    margin-top: 0;
-    margin-bottom: 32px;
 }
 .editing div:first-child{
     margin-bottom: 24px;
@@ -412,8 +234,10 @@ footer{
     display: flex;
     flex-direction: column;
 }
-footer div:nth-child(2){
+.footer-end{
     display: flex;
+    padding-top: 2rem;
+    justify-content: space-around;
 }
 
 footer ul{
@@ -444,10 +268,6 @@ footer li{
     
 }
 
-footer nav{
-    margin-left: auto;
-    margin-right: 162px;
-}
 
 
 footer .div-img p{
@@ -460,9 +280,6 @@ footer .div-img p{
 
 }
 
-footer .copyright{
-    margin-left: 156px;
-}
 
 .logo-rayo p{
     font-size: 12px;
@@ -477,6 +294,12 @@ footer .div-img p:hover{
     background-color: gray;
     width: fit-content;
 }
+.copyright{
+    margin-right: 2.5rem;
+}
+.union{
+    display: flex;
+}
 
 .div-img a{
     display: flex;
@@ -484,7 +307,6 @@ footer .div-img p:hover{
 .div-img{
     display: flex;
     align-items: center;
-    margin-left: 50px;
 }
 
 .div-img img{
@@ -492,7 +314,7 @@ footer .div-img p:hover{
     z-index: 1;
     width: 8%;
     height: 5%;
-    margin-top: 14px;
+    margin-top: 4px;
 }
 
 .monograph-text img:hover, .editing img:hover, .copywriting img:hover, .brand img:hover, .rain-text img:hover, form div img:hover{
