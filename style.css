@@ -10,13 +10,12 @@ body{
 
 header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
 }
 header div{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 180px ;
-    border-bottom: solid 1px black;
+    margin-right: 40rem;
 }
 header div img{
     height: 3vh;
@@ -147,8 +146,66 @@ header a, .boton-1, .boton-2, .boton-3, .boton-4, footer > div > div:last-child 
     height: 100%;
 }
 
+.hamburguer-menu{
+    display: none;
+}
 
+.hamb{
+    cursor: pointer;
+    position: relative;
+    padding: 1rem 0;
+    z-index: 2;
+}
+.hamb-line{
+    display: block;
+    background-color: black;
+    position: relative;
+    width: 1.5rem;
+    height: 3px;
+}
 
+.hamb-line::after, .hamb-line::before{
+    content: '';
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.hamb-line::after{
+    top: .5rem;
+}
+.hamb-line::before{
+    bottom: .5rem;
+}
+
+.full-menu{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -95rem;
+    bottom: 0;
+    z-index: 1;
+    transition: left .3s;
+}
+
+.hamburguer-menu:checked ~ .hamb .hamb-line::after{
+    transform: rotate(45deg);
+    top: 0;
+}
+.hamburguer-menu:checked ~ .hamb .hamb-line::before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.hamburguer-menu:checked ~ .hamb .hamb-line{
+    background-color: transparent;
+}
+.hamburguer-menu:checked ~ .full-menu{
+    left: 0;
+    transition: left .3s;
+
+}
 label, ::placeholder{
     font-size: 14px;
     font-family: sans-serif;
